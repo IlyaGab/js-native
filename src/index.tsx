@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {sum} from './03/03';
-console.log(sum(1, 2))
+import {predicate} from './04/04';
+
+predicate(90)
 ReactDOM.render(
   <React.StrictMode>
     <App />
