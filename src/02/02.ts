@@ -1,4 +1,5 @@
 type LocalCityType = {
+    title:string
     countryTitle:string
 }
 type AddressType = {
@@ -9,7 +10,8 @@ type TechType = {
     id:number
     title:string
 }
-type StudentType = {
+export type StudentType = {
+    id:number
     name:string
     age:number
     isActive: boolean
@@ -18,14 +20,15 @@ type StudentType = {
 }
 
 
-
 export const student:StudentType = {
+    id:1,
     name: 'Ilya',
     age: 27,
     isActive: false,
     address: {
         streetTitle: 'Surganova2',
         city: {
+            title: 'Moscow',
             countryTitle: 'Belarus'
         }
     },
