@@ -1,5 +1,5 @@
-import exp from 'constants';
-import {GovernmentBuildingsType} from '../02/02_02';
+
+import {GovernmentBuildingsType, HouseType} from '../02/02_02';
 
 export type ManType = {
     name: string
@@ -49,4 +49,9 @@ export const createGreetingsMessages = (people: Array<ManType>) => {
 
 export const getStreetsTitleOfGovernmentBuildings = (buildings:Array<GovernmentBuildingsType> ) => {
     return buildings.map(b => b.address.street.title)
+}
+
+export const createMessagee = (houses:Array<HouseType>) => {
+    let callbackfn = (h:HouseType) => `Hello guys from ${h.address.street.title}`;
+    return houses.map(callbackfn)
 }

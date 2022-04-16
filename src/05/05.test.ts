@@ -1,6 +1,5 @@
 import {createGreetingsMessages, getStreetsTitleOfGovernmentBuildings, ManType} from './05';
-import exp from 'constants';
-import {createMessage} from '../03/03';
+
 import {CityType} from '../02/02_02';
 
 let people : Array<ManType> = []
