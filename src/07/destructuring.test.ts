@@ -11,6 +11,8 @@ type ManType = {
 
 
 let man: ManType;
+
+
 beforeEach(() => {
     man = {
         name: 'Ilya',
